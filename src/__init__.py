@@ -8,11 +8,11 @@ from src.controllers import *
 
 
 
-def create_app():
-    app.run(debug=True, port=5000)
-    return app
-
-
- #Heroku   
 #def create_app():
-#  return app 
+ #   app.run(debug=True, port=5000)
+  #  return app
+
+
+   
+def create_app():
+  return app 
