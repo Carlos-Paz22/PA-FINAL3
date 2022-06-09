@@ -287,8 +287,9 @@ def crear():
                         return render_template("/acort-url/index.html",notifi=notifi)
 
                 acortador.createUrl(url=url,short=short)
+                gobalvariabl= settings.GLOBAL_URL
            
-        return render_template("/acort-url/urlAcort.html",short=short,url=url)
+        return render_template("/acort-url/urlAcort.html",short=short,url=url,gobalvariabl=gobalvariabl)
 
 @app.route("/cortar/<url_cort>",methods=["GET","POST"])
 def redireccionar(url_cort):       
